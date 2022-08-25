@@ -8,17 +8,32 @@
                 src: url('fonts/PancakeCoder.ttf') format('truetype');
             }
             body, html {
+                font-family: 'PancakeCoderOfficial';
                 cursor: url(images/PancakeCoderCursor.png), default;
             }
-            a{
+            button{
                 cursor: url(images/PancakeCoderCursor2.png), pointer;
+                background-color: #3a3a3a;
+                border: inset #000000 5px;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                color: white;
+                font-size: 1.5em;
+            }
+            button:focus, button:hover{
+                background-color: #585858;
+                color: white;
+                border: inset #3a3a3a 5px;
+                border-left: none;
+                border-right: none;
+                border-top: none;
             }
             .Title{
-                margin-left: 7em;
-                margin-right: 7em;
                 text-align: center;
                 font-size: 64px;
-                font-family: 'PancakeCoderOfficial';
+            }
+            .Title b{ 
                 cursor: url(images/PancakeCoderCursor2.png), pointer;
             }
         </style>
@@ -29,7 +44,8 @@
         <link rel="shortcut icon" href="images/PancakeCoderFavicon.png">
     </head>
     <body>
-        <h1 id="Title" class="Title">PancakeCoder.org</h1>
+        <h1 id="Title" class="Title"><b>PancakeCoder.org</b></h1>
+        <button class="Downloadables" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1_Pre.zip'">Download Jet Flying Sim Beta V1 Pre Made By PancakeCoder Using Unity</button>
         <script>
             var url = 'PancakeCoder.html';
             var element = document.getElementsByClassName('Title')[0]; // only targets the first element it finds
