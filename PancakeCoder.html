@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face {
+                font-family: 'PancakeCoderOfficial';
+                src: url('fonts/PancakeCoder.ttf') format('truetype');
+            }
+            body, html {
+                cursor: url(images/PancakeCoderCursor.png), default;
+            }
+            a{
+                cursor: url(images/PancakeCoderCursor2.png), pointer;
+            }
+            .Title{
+                margin-left: 7em;
+                margin-right: 7em;
+                text-align: center;
+                font-size: 64px;
+                font-family: 'PancakeCoderOfficial';
+                cursor: url(images/PancakeCoderCursor2.png), pointer;
+            }
+        </style>
+        <title>
+            PancakeCoder.org
+        </title>
+        <link rel="apple-touch-icon" href="images/PancakeCoderFavicon.png">
+        <link rel="shortcut icon" href="images/PancakeCoderFavicon.png">
+    </head>
+    <body>
+        <h1 id="Title" class="Title">PancakeCoder.org</h1>
+        <script>
+            var url = 'PancakeCoder.html';
+            var element = document.getElementsByClassName('Title')[0]; // only targets the first element it finds
+            element.addEventListener('click',function(){
+                location.href = url;
+            });
+        </script>
+    </body>
+</html>
