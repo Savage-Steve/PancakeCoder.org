@@ -7,11 +7,16 @@
                 font-family: 'PancakeCoderOfficial';
                 src: url('fonts/PancakeCoder.ttf') format('truetype');
             }
+            @font-face {
+                font-family: 'PancakeCoderButtonOfficial';
+                src: url('fonts/PancakeCoderButton.ttf') format('truetype');
+            }
             body, html {
                 font-family: 'PancakeCoderOfficial';
                 cursor: url(images/PancakeCoderCursor.png), default;
             }
             button{
+                font-family: PancakeCoderButtonOfficial;
                 margin-top: 10px;
                 margin-bottom: 10px;
                 cursor: url(images/PancakeCoderCursor2.png), pointer;
@@ -50,14 +55,14 @@
     </head>
     <body>
         <h1 id="Title" class="Title"><b>PancakeCoder.org</b></h1>
-        <button class="Downloadables" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1_Pre.zip'">Download Jet Flying Sim Beta V1 Pre Made By PancakeCoder Using Unity</button>
+        <button class="Downloadables" style="" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1_Pre.zip'">Download Jet Flying Sim Beta V1 Pre Made By PancakeCoder Using Unity</button>
         <br>
         <button class="Downloadables" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1.zip'">Download Jet Flying Sim Beta V1 Made By PancakeCoder Using Unity</button>
         <br>
         <button class="Downloadables" onclick="window.location.href='downloadable_files/TP_Action_Pre_V1.zip'">Download TP Action Pre V1 Made By PancakeCoder Using Unity <b class="error">⚠ DEPRECATED ⚠</b></button>
         <script>
             var url = 'PancakeCoder.html';
-            var element = document.getElementsByClassName('Title')[0]; // only targets the first element it finds
+            var element = document.getElementsByName('Title')[0]; // only targets the first element it finds
             element.addEventListener('click',function(){
                 location.href = url;
             });
