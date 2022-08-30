@@ -12,34 +12,36 @@
                 src: url('fonts/PancakeCoderButton.ttf') format('truetype');
             }
             body, html {
-                font-family: 'PancakeCoderOfficial';
+                font-family: PancakeCoderOfficial;
                 cursor: url(images/PancakeCoderCursor.png), default;
             }
             button{
+                -webkit-text-stroke-color: #3a3a3a;
+                -webkit-text-stroke-width: 0.75px;
                 font-family: PancakeCoderButtonOfficial;
-                margin-top: 10px;
-                margin-bottom: 10px;
                 cursor: url(images/PancakeCoderCursor2.png), pointer;
-                background-color: #3a3a3a;
-                border: inset #000000 5px;
-                border-left: none;
-                border-right: none;
-                border-top: none;
-                color: white;
+                border: solid #3a3a3a 2.5px;
+                background-image: url("images/PancakeCoderTextBackground.png");
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
                 font-size: 1.5em;
             }
             button b{
                 color: red;
             }
             button:focus, button:hover{
-                background-color: #585858;
-                color: white;
-                border: inset #3a3a3a 5px;
-                border-left: none;
-                border-right: none;
-                border-top: none;
+                -webkit-text-stroke-color: #585858;
+                -webkit-text-stroke-width: 0.75px;
+                border: solid #585858 2.5px;
             }
             .Title{
+                -webkit-text-stroke-color: #585858;
+                -webkit-text-stroke-width: 0.5px;
+                background-image: url("images/PancakeCoderTextBackground.png");
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
                 text-align: center;
                 font-size: 64px;
             }
@@ -59,10 +61,10 @@
         <br>
         <button class="Downloadables" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1.zip'">Download Jet Flying Sim Beta V1 Made By PancakeCoder Using Unity</button>
         <br>
-        <button class="Downloadables" onclick="window.location.href='downloadable_files/TP_Action_Pre_V1.zip'">Download TP Action Pre V1 Made By PancakeCoder Using Unity <b class="error">⚠ DEPRECATED ⚠</b></button>
+        <button class="Downloadables" onclick="window.location.href='downloadable_files/TP_Action_Pre_V1.zip'">Download TP Action Pre V1 Made By PancakeCoder Using Unity <img src="images/PancakeCoderDep.png"><b class="error"> DEPRECATED </b><img src="images/PancakeCoderDep.png"></button>
         <script>
             var url = 'PancakeCoder.html';
-            var element = document.getElementsByName('Title')[0]; // only targets the first element it finds
+            var element = document.getElementsByClassName('Title')[0]; // only targets the first element it finds
             element.addEventListener('click',function(){
                 location.href = url;
             });
