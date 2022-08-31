@@ -20,20 +20,24 @@
                 -webkit-text-stroke-width: 0.75px;
                 font-family: PancakeCoderButtonOfficial;
                 cursor: url(images/PancakeCoderCursor2.png), pointer;
-                border: solid #3a3a3a 5px;
                 background-image: url("images/PancakeCoderTextBackground.png");
                 background-clip: text;
+                border: none;
                 -webkit-background-clip: text;
                 color: transparent;
                 font-size: 1.5em;
             }
             button b{
-                color: red;
+                background-image: url("images/PancakeCoderDep.png");
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 1.5em;
             }
             button:focus, button:hover{
                 -webkit-text-stroke-color: #585858;
                 -webkit-text-stroke-width: 0.75px;
-                border: solid #585858 5px;
+                border: none;
             }
             .Title{
                 -webkit-text-stroke-color: #585858;
@@ -61,7 +65,7 @@
         <br>
         <button class="Downloadables" onclick="window.location.href='downloadable_files/Jet_Flying_Sim_Beta_V1.zip'">Download Jet Flying Sim Beta V1 Made By PancakeCoder Using Unity</button>
         <br>
-        <button class="Downloadables" onclick="window.location.href='downloadable_files/TP_Action_Pre_V1.zip'">Download TP Action Pre V1 Made By PancakeCoder Using Unity <img src="images/PancakeCoderDep.png"><b class="error"> DEPRECATED </b><img src="images/PancakeCoderDep.png"></button>
+        <button class="Downloadables" onclick="window.location.href='downloadable_files/TP_Action_Pre_V1.zip'">Download TP Action Pre V1 Made By PancakeCoder Using Unity<b> DEPRECATED </b></button>
         <script>
             var url = 'PancakeCoder.html';
             var element = document.getElementsByClassName('Title')[0]; // only targets the first element it finds
